@@ -1,166 +1,599 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Portafolio | Desarrollador Full Stack</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Portafolio | Desarrollador Full Stack</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicon -->
+  <link href="assets/img/favicon.png" rel="icon">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
 </head>
 
-<body>
+<body class="index-page">
 
-    <!-- ======= ENCABEZADO PRINCIPAL ======= -->
-    <header>
-        <h1>Mi Portafolio Profesional</h1> <!-- Título principal del sitio -->
-        <p>Desarrollador Full Stack</p> <!-- Subtítulo o rol profesional -->
-    </header>
+  <header id="header" class="header dark-background d-flex flex-column">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
 
-    <!-- ======= MENÚ DE NAVEGACIÓN ======= -->
-    <nav>
-        <ul>
-            <!-- Cada ítem lleva a una sección dentro de la página -->
-            <li><a href="#proyectos">Portafolio</a></li>
-            <li><a href="#acerca">Acerca de mí</a></li>
-            <li><a href="#cv">CV</a></li>
-            <li><a href="#blog">Blog</a></li>
-            <li><a href="#contacto">Contacto</a></li>
-        </ul>
+    <div class="profile-img">
+      <img src="assets/img/my-profile-img.jpg" alt="" class="img-fluid rounded-circle">
+    </div>
+
+    <a href="index.html" class="logo d-flex align-items-center justify-content-center">
+      <img src="assets/img/Logo_01.png" alt="">
+      <h1 class="sitename">Francisco Javier Sánchez Rodríguez</h1>
+    </a>
+
+
+
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i>Inicio</a></li>
+        <li><a href="#about"><i class="bi bi-person navicon"></i> Acerca de</a></li>
+        <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Currículum </a></li>
+        <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Portafolio</a></li>
+
+        <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contacto</a></li>
+      </ul>
     </nav>
 
-    <!-- ======= SECCIÓN DE PROYECTOS ======= -->
-    <section id="proyectos">
-        <h2>Proyectos Destacados</h2> <!-- Título de la sección -->
+  </header>
 
-        <!-- Contenedor de todos los proyectos -->
-        <div class="proyectos-container">
+  <main class="main">
 
-            <!-- Cada proyecto está dentro de un div individual -->
-            <div class="proyecto">
-                <h3>E-commerce - The King Tiger</h3> <!-- Nombre del proyecto -->
-                <img src="https://i.postimg.cc/bJcF8rYJ/E-commerce.png" alt="E-commerce"> <!-- Imagen representativa -->
-                <p>Proyecto en desarrollo</p>
-                <a href="https://github.com/IngJavRod/E-commerce_Project" target="_blank">Ver código en GitHub</a>
-            </div>
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
 
-            <div class="proyecto">
-                <h3>Landing Page</h3>
-                <img src="https://i.postimg.cc/cHWyhXnX/Hackaton.png" alt="Hackathon">
-                <a href="https://hackaton-landingpage.netlify.app/" target="_blank">Ver aplicación</a>
-            </div>
+      <img src="assets/img/hero-bg3_v2.jpg" alt="" data-aos="fade-in" class="">
 
-            <div class="proyecto">
-                <h3>Pruebas Unitarias Básicas</h3>
-                <img src="https://i.postimg.cc/BbyF9Ls7/Pruebas-Unitarias.png" alt="Pruebas Unitarias">
-                <a href="https://github.com/IngJavRod/Pruebas_Unitarias-Basicas" target="_blank">Ver código en
-                    GitHub</a>
-            </div>
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <h2>Javier Rodríguez</h2>
+        <p>Soy <span class="typed"
+            data-typed-items="Ingeniero Mecatrónico, Desarrollador Full Stack, Apasionado por la Tecnología"></span><span
+            class="typed-cursor typed-cursor--blink" aria-hidden="true"></span><span
+            class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
+      </div>
 
-            <div class="proyecto">
-                <h3>Control de Gastos</h3>
-                <img src="https://i.postimg.cc/L56dK5vP/Budget.png" alt="Budget App">
-                <a href="https://budget-a-p-p.netlify.app/" target="_blank">Ver aplicación</a>
-            </div>
+    </section><!-- /Hero Section -->
 
-            <div class="proyecto">
-                <h3>Conversor de Temperaturas</h3>
-                <img src="https://i.postimg.cc/0jtT8vHB/Temperatura.png" alt="Conversor de Temperaturas">
-                <a href="https://control-temperat.netlify.app/" target="_blank">Ver aplicación</a>
-            </div>
+    <!-- About Section -->
+    <section id="about" class="about section">
 
-        </div> <!-- Fin del contenedor de proyectos -->
-    </section>
-
-    <!-- ======= ACERCA DE MÍ ======= -->
-    <section id="acerca">
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
         <h2>Acerca de mí</h2>
-        <p>
-            👋 ¡Hola! Soy Ingeniero Mecatrónico con experiencia full stack en desarrollo frontend y backend. Me apasiona
-            crear soluciones tecnológicas eficientes y seguras, desde sistemas automatizados de acceso hasta la
-            integración de APIs y arquitecturas web modernas.
-        </p>
+        <p> ¡Hola! Soy un Ingeniero con experiencia full stack en desarrollo frontend y backend. Me apasiona
+          crear soluciones tecnológicas eficientes y seguras, desde sistemas automatizados de acceso hasta la
+          integración de APIs y arquitecturas web modernas.</p>
+      </div><!-- End Section Title -->
 
-        <p>
-            🔧 Actualmente trabajo en proyectos full stack, mientras profundizo en fundamentos de DevOps y técnicas de
-            análisis y visualización de datos. He reforzado mis conocimientos con cursos en Python, C/C++, CSS, redes y
-            analítica para mantener mis habilidades siempre actualizadas.
-        </p>
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-        <p>
-            🛠️ Utilizo frecuentemente tecnologías como JavaScript, HTML, CSS, Python y SQL. Disfruto colaborar en
-            equipos multidisciplinarios para resolver desafíos técnicos con soluciones prácticas e innovadoras.
-        </p>
-
-        <p>
-            📍 Nací en Guadalajara, crecí en Colima y estudié en Querétaro.
-        </p>
-    </section>
-
-    <!-- ======= CV / HABILIDADES TÉCNICAS ======= -->
-    <section id="cv">
-        <h2>CV</h2>
-        <ul>
-            <strong>Lenguajes:</strong> Java, JavaScript, Python, C/C++ <br>
-            <strong>Frameworks:</strong> Spring Boot <br>
-            <strong>Bases de datos:</strong> MySQL, SQL <br>
-            <strong>Herramientas:</strong> Git, GitHub, Netlify, Excel, Tableau, Packet Tracer <br>
-            <strong>Otras competencias:</strong> Análisis de datos, Administración de redes y seguridad, Diseño y
-            control de sistemas mecatrónicos
-
-            <p class="cv-descarga">
-                📄 Para conocer más sobre mi experiencia y formación, puedes
-                <a href="/Doc/CV.pdf" download target="_blank">descargar mi CV</a>.
+        <div class="row gy-4 justify-content-center">
+          <div class="col-lg-4">
+            <img src="assets/img/my-profile-img2.JPG" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-8 content">
+            <h2>Ingeniero Mecatronico &amp; Desarrollador Full Stack.</h2>
+            <p class="fst-italic py-3">
+            <p>
+              Mi camino en el desarrollo comenzó con una simple curiosidad, entender cómo funciona la tecnología que
+              usamos todos los días. Como Ingeniero Mecatrónico, siempre me interesó el funcionamiento interno de los
+              sistemas, desde sensores y circuitos hasta líneas de código que automatizan tareas o comunican
+              dispositivos.
             </p>
+            <p>
+              Esa curiosidad me llevó a explorar el desarrollo de software. Lo que comenzó con pequeños scripts y
+              pruebas, se transformó en proyectos más complejos, donde empecé a ver el verdadero poder de construir
+              soluciones.
+            </p>
+            <div class="row">
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Cumpleaños:</strong> <span>2 de Julio de 1998</span>
+                  </li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Telefono:</strong> <span>312 111 3180</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Ciudad:</strong> <span>Colima,Mx</span></li>
+                </ul>
+              </div>
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Edad:</strong> <span>27</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Título universitario:</strong> <span>Ingeniería en
+                      Mecatronica</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Correo:</strong>
+                    <span>inge.javirodriguez@gmail.com</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
 
-        </ul>
-    </section>
+          </div>
+        </div>
 
-    <!-- ======= BLOG PERSONAL ======= -->
-    <section id="blog">
+      </div>
 
-        <h2>Blog</h2>
-        <p>
-            Mi camino en el desarrollo comenzó con una simple curiosidad, entender cómo funciona la tecnología que
-            usamos todos los días. Como Ingeniero Mecatrónico, siempre me interesó el funcionamiento interno de los
-            sistemas, desde sensores y circuitos hasta líneas de código que automatizan tareas o comunican dispositivos.
+    </section><!-- /About Section -->
+
+
+    </div>
+
+    </div>
+
+    </section><!-- /Stats Section -->
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Habilidades</h2>
+        <p>Estas son algunas de las principales tecnologías y herramientas con las que trabajo para desarrollar
+          soluciones web modernas, eficientes y escalables.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row skills-content skills-animation">
+
+          <div class="col-lg-6">
+
+            <div class="progress">
+              <span class="skill"><span>HTML</span> <i class="val">80%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div><!-- End Skills Item -->
+
+            <div class="progress">
+              <span class="skill"><span>CSS</span> <i class="val">70%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div><!-- End Skills Item -->
+
+            <div class="progress">
+              <span class="skill"><span>JavaScript</span> <i class="val">55%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div><!-- End Skills Item -->
+
+          </div>
+
+          <div class="col-lg-6">
+
+            <div class="progress">
+              <span class="skill"><span>Figma/Diseño UI/UX</span> <i class="val">80%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div><!-- End Skills Item -->
+
+            <div class="progress">
+              <span class="skill"><span>Git/GitHub </span> <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div><!-- End Skills Item -->
+
+            <div class="progress">
+              <span class="skill"><span>MySQL </span> <i class="val">65%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div><!-- End Skills Item -->
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Skills Section -->
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Currículum</h2>
+        <p>A continuación, puedes conocer mi formación académica y experiencia profesional. Este
+          recorrido incluye mis estudios, trabajos y proyectos que me han permitido desarrollar una base sólida en
+          tecnología, adquirir nuevas habilidades y enfrentar distintos desafíos en el mundo del desarrollo web.
         </p>
-        <p>
-            Esa curiosidad pronto me llevó a explorar el desarrollo de software. Lo que comenzó con pequeños scripts y
-            pruebas, se transformó en proyectos más complejos, donde empecé a ver el verdadero poder de construir
-            soluciones desde cero. A través de cursos, práctica constante y colaboración en equipo, he podido
-            transformar ideas en herramientas útiles, interfaces funcionales y sistemas que resuelven problemas reales.
-        </p>
-        <p>
-            Para mí, el desarrollo no es solo escribir código, sino que es entender problemas, conectar piezas, aprender
-            nuevas
-            tecnologías y mantener siempre una mentalidad de mejora continua. Me motiva la posibilidad de crear cosas
-            que funcionen, que ayuden y que sean mantenibles en el tiempo.
-        </p>
-        <p>
-            Hoy en día, sigo aprendiendo y experimentando con distintas áreas del desarrollo, desde la web full stack
-            hasta la automatización, el análisis de datos y los principios de DevOps. El mundo del software es tan
-            amplio como fascinante, y estoy aquí para seguir creciendo con cada nuevo reto.
-        </p>
-        </article>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+
+            <h3 class="resume-title">Educacion</h3>
+            <div class="resume-item">
+              <h4>Desarrollador Full - Stack</h4>
+              <h5>Mayo 2025 - Agosto 2025</h5>
+              <p><em>Generation Mexico, Guadalajara, MX</em></p>
+              <p>Completé un bootcamp intensivo en desarrollo Full-Stack, donde aprendí Java, Spring Boot, JavaScript,
+                HTML, CSS, así como herramientas como Jira, Figma y metodologías ágiles.</p>
+            </div><!-- Edn Resume Item -->
+
+            <div class="resume-item">
+              <h4>Ingeniería Mecatrónica</h4>
+              <h5>Agosto 2018 - Junio 2024</h5>
+              <p><em>TecNM campus Querétaro, Querétaro, Mx</em></p>
+              <p>Cursé la carrera de Ingeniería Mecatrónica, adquiriendo conocimientos en automatización de procesos,
+                electrónica, sistemas de control y programación aplicada a entornos industriales.</p>
+            </div><!-- Edn Resume Item -->
 
 
-    </section>
+            <h3 class="resume-title"> Proyecto Académico</h3>
+            <div class="resume-item pb-0">
+              <h4>Solución IoT/Automatización</h4>
+              <h5>Enero 2023 - Julio 2023</h5>
+              <p><em>TecNM campus Colima, Colima, Mx</em></p>
+              <ul>
+                <li>Desarrollé e implementé un sistema de control automatizado de acceso automatizado sin contacto,
+                  mejorando seguridad y eficiencia.</li>
+                <li>Gestioné almacenamiento y análisis de datos para el registro del personal.
+                </li>
+                <li>Coordiné pruebas y optimizaciones para garantizar precisión y fiabilidad.
+                </li>
+              </ul>
+            </div><!-- Edn Resume Item -->
+          </div>
 
-    <!-- ======= CONTACTO ======= -->
-    <section id="contacto">
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <h3 class="resume-title">Experiencia Profesional</h3>
+            <div class="resume-item">
+              <h4>E-commerce - FireStack</h4>
+              <h5>Mayo 2025 - Agosto 2025</h5>
+              <p><em>Generation Mexico, Guadalajara, MX</em></p>
+              <ul>
+                <li>Desarrollé interfaces frontend con HTML, CSS y JavaScript.</li>
+                <li>Implementé backend con Java, Spring Boot, MySQL y APIs REST.</li>
+                <li>Diseñé operaciones CRUD para gestión de productos.</li>
+                <li>Participé en levantamiento de requerimientos, desarrollo, pruebas y entrega.</li>
+              </ul>
+            </div><!-- Edn Resume Item -->
+
+            <div class="resume-item">
+              <h4>Especialista en Logística</h4>
+              <h5>Junio 2022 - Enero 2023</h5>
+              <p><em>R2, Colima, MX</em></p>
+              <ul>
+                <li>Gestioné redistribución de materiales y residuos peligrosos.</li>
+                <li>Coordiné con clientes y proveedores para optimizar entregas y reducir costos.</li>
+                <li>Implementé documentación y trazabilidad para mejorar el seguimiento.</li>
+              </ul>
+            </div><!-- Edn Resume Item -->
+
+            <div class="resume-item">
+              <h4>Facturación y Atención</h4>
+              <h5>Febrero 2021 - Abril 2022</h5>
+              <p><em>IQ Call, Colima, MX</em></p>
+              <ul>
+                <li>Brindé soporte especializado con MS Office y sistemas de gestión de datos</li>
+                <li>Optimicé procesos administrativos, mejorando facturación y documentación.</li>
+              </ul>
+            </div><!-- Edn Resume Item -->
+
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Resume Section -->
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Portafolio</h2>
+        <p>Aquí encontrarás una selección de proyectos en los que he estado trabajando recientemente. Desde diseños de
+          inteligentes hasta aplicaciones web completas, cada uno representa un paso más en mi camino como
+          desarrollador full stack.</p>
+      </div><!-- End Section Title -->
+
+      <!-- ========================= -->
+      <!-- tarjetas del Portfolio   -->
+      <!-- ========================= -->
+
+      <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+        <!-- Proyecto 1: Control de Gastos -->
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
+          <div class="portfolio-content h-100">
+            <img src="https://i.postimg.cc/L56dK5vP/Budget.png" class="img-fluid" alt="Control de Gastos">
+            <div class="portfolio-info">
+              <h4>Control de Gastos</h4>
+              <p>App web para gestión de presupuestos</p>
+              <a href="https://i.postimg.cc/L56dK5vP/Budget.png" data-gallery="portfolio-gallery-book"
+                class="glightbox preview-link" title="Control de Gastos">
+                <i class="bi bi-zoom-in"></i>
+              </a>
+              <a href="https://budget-a-p-p.netlify.app/" target="_blank" class="details-link" title="Ver aplicación">
+                <i class="bi bi-link-45deg"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Proyecto 2: E-commerce -->
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+          <div class="portfolio-content h-100">
+            <img src="https://i.postimg.cc/bJcF8rYJ/E-commerce.png" class="img-fluid" alt="E-commerce">
+            <div class="portfolio-info">
+              <h4>E-commerce - The King Tiger</h4>
+              <p>Proyecto en desarrollo</p>
+              <a href="https://i.postimg.cc/bJcF8rYJ/E-commerce.png" data-gallery="portfolio-gallery-app"
+                class="glightbox preview-link" title="E-commerce - The King Tiger">
+                <i class="bi bi-zoom-in"></i>
+              </a>
+              <a href="https://github.com/IngJavRod/E-commerce_Project" target="_blank" class="details-link"
+                title="Ver código en GitHub">
+                <i class="bi bi-link-45deg"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Proyecto 3: Conversor de Temperaturas -->
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+          <div class="portfolio-content h-100">
+            <img src="https://i.postimg.cc/0jtT8vHB/Temperatura.png" class="img-fluid" alt="Conversor de Temperaturas">
+            <div class="portfolio-info">
+              <h4>Conversor de Temperaturas</h4>
+              <p>Convierte de °C a °F y K</p>
+              <a href="https://i.postimg.cc/0jtT8vHB/Temperatura.png" data-gallery="portfolio-gallery-app"
+                class="glightbox preview-link" title="Conversor de Temperaturas">
+                <i class="bi bi-zoom-in"></i>
+              </a>
+              <a href="https://control-temperat.netlify.app/" target="_blank" class="details-link"
+                title="Ver aplicación">
+                <i class="bi bi-link-45deg"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Proyecto 4: Pagina Blog -->
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
+          <div class="portfolio-content h-100">
+            <img src="https://i.postimg.cc/282bP0YX/Captura-de-pantalla-2025-07-15-192646.png" class="img-fluid"
+              alt="Pagina Blog Tisanas">
+            <div class="portfolio-info">
+              <h4>Página web/blog</h4>
+              <p>Blog sobre un tema de interes</p>
+              <a href="https://i.postimg.cc/282bP0YX/Captura-de-pantalla-2025-07-15-192646.png"
+                data-gallery="portfolio-gallery-book" class="glightbox preview-link"
+                title="Blog sobre un tema diferente">
+                <i class="bi bi-zoom-in"></i>
+              </a>
+              <a href="https://blog-tis.netlify.app/" target="_blank" class="details-link" title="Ver aplicación">
+                <i class="bi bi-link-45deg"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Proyecto 5: Pruebas Unitarias -->
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+          <div class="portfolio-content h-100">
+            <img src="https://i.postimg.cc/BbyF9Ls7/Pruebas-Unitarias.png" class="img-fluid" alt="Pruebas Unitarias">
+            <div class="portfolio-info">
+              <h4>Pruebas Unitarias Básicas</h4>
+              <p>Proyecto con test simples de JS</p>
+              <a href="https://i.postimg.cc/BbyF9Ls7/Pruebas-Unitarias.png" data-gallery="portfolio-gallery-branding"
+                class="glightbox preview-link" title="Pruebas Unitarias">
+                <i class="bi bi-zoom-in"></i>
+              </a>
+              <a href="https://github.com/IngJavRod/Pruebas_Unitarias-Basicas" target="_blank" class="details-link"
+                title="Ver código en GitHub">
+                <i class="bi bi-link-45deg"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Proyecto 6: Landing Page -->
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+          <div class="portfolio-content h-100">
+            <img src="https://i.postimg.cc/cHWyhXnX/Hackaton.png" class="img-fluid" alt="Landing Page">
+            <div class="portfolio-info">
+              <h4>Landing Page</h4>
+              <p>Proyecto realizado como un simulacro de hackatón</p>
+              <a href="https://i.postimg.cc/cHWyhXnX/Hackaton.png" data-gallery="portfolio-gallery-product"
+                class="glightbox preview-link" title="Landing Page">
+                <i class="bi bi-zoom-in"></i>
+              </a>
+              <a href="https://hackaton-landingpage.netlify.app/" target="_blank" class="details-link"
+                title="Ver aplicación">
+                <i class="bi bi-link-45deg"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+
+      </div><!-- FIN de tarjetas del Portfolio   -->
+
+
+    </section><!-- /portfolio Section -->
+
+    <!--------------------->
+    <!-- Contact Section -->
+    <!--------------------->
+
+    <section id="contact" class="contact section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
         <h2>Contacto</h2>
-        <p>📧 Correo: inge.javirodriguez@gmail.com</p>
-        <p>🌐 GitHub: <a href="https://github.com/IngJavRod" target="_blank">github.com/IngJavRod</a></p>
-        <p>🔗 LinkedIn: <a href="https://www.linkedin.com/in/javi-rod" target="_blank">linkedin.com/in/javi-rod</a></p>
-    </section>
+        <p>Si estás interesado en trabajar conmigo, tienes alguna consulta o simplemente quieres saludar, no dudes en
+          ponerte en contacto. ¡Estaré encantado de leerte!</p>
+      </div><!-- End Section Title -->
 
-    <!-- ======= PIE DE PÁGINA ======= -->
-    <footer>
-        <p>&copy; 2025 - Portafolio creado por Javier Rodriguez</p>
-    </footer>
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-    <!-- ======= SCRIPT JS (si lo necesitas) ======= -->
-    <script src="script.js"></script>
+        <div class="row gy-4">
+
+          <div class="col-lg-5">
+
+            <div class="info-wrap">
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
+                <div>
+                  <h3>Conecta Conmigo</h3>
+                  <p><a href="https://www.linkedin.com/in/javi-rod" target="_blank">linkedin.com/in/javi-rod</a></p>
+                </div>
+              </div><!-- End Info Item -->
+
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+                <div>
+                  <h3>Explora mi Código</h3>
+                  <p><a href="https://github.com/IngJavRod" target="_blank">github.com/IngJavRod</a></p>
+                </div>
+              </div><!-- End Info Item -->
+
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+                <div>
+                  <h3>Envia un Correo</h3>
+                  <p>
+                    <a href="#" id="correo-link" target="_blank">inge.javirodriguez@gmail.com
+                    </a>
+                  </p>
+                  <script>
+                    document.getElementById('correo-link').addEventListener('click', function (event) {
+                      event.preventDefault(); // evitar abrir mailto
+                      navigator.clipboard.writeText('inge.javirodriguez@gmail.com').then(function () {
+                        alert('Correo copiado');
+                      }, function () {
+                        alert('No se pudo copiar el correo');
+                      });
+                    });
+                  </script>
+                </div>
+              </div><!-- End Info Item -->
+
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+                <div>
+                  <h3>Mi Recorrido</h3>
+                  <p class="cv-descarga">
+                    Conoce más sobre mi experiencia y formación en
+                    <a href="/assets/img/Doc/CV.pdf" download target="_blank">mi CV</a>.
+                  </p>
+                </div>
+              </div><!-- End Info Item -->
+
+            </div>
+          </div>
+
+          <div class="col-lg-7">
+            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up"
+              data-aos-delay="200">
+              <div class="row gy-4">
+
+                <div class="col-md-6">
+                  <label for="name-field" class="pb-2">Tú Nombre</label>
+                  <input type="text" name="name" id="name-field" class="form-control" required="">
+                </div>
+
+                <div class="col-md-6">
+                  <label for="email-field" class="pb-2">Tú Email</label>
+                  <input type="email" class="form-control" name="email" id="email-field" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <label for="subject-field" class="pb-2">Asunto</label>
+                  <input type="text" class="form-control" name="subject" id="subject-field" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <label for="message-field" class="pb-2">Mensaje</label>
+                  <textarea class="form-control" name="message" rows="10" id="message-field" required=""></textarea>
+                </div>
+
+                <div class="col-md-12 text-center">
+                  <div class="loading">Cargando</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Tú mensaje ha sido enviado. Gracias!</div>
+
+                  <button type="submit">Mandar Mensaje</button>
+                </div>
+
+              </div>
+            </form>
+          </div><!-- End Contact Form -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Contact Section -->
+
+  </main>
+
+  <footer id="footer" class="footer position-relative light-background">
+
+    <div class="container">
+      <div class="copyright text-center ">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">IngeJavRod</strong> <span>Todos los Derechos
+            Reservados</span>
+        </p>
+      </div>
+      <div class="credits">
+
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
 </body>
 
 </html>
