@@ -11,7 +11,7 @@
   --background-color: #ffffff; /* Background color for the entire website, including individual sections */
   --default-color: #272829; /* Default color used for the majority of the text content across the entire website */
   --heading-color: #050d18; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #4a9ed8; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --accent-color: #2b7cb8; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
   --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
   --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
@@ -1284,7 +1284,8 @@ section,
   height: 86px;
   border-radius: 22px;
   background: #fff;
-  box-shadow: 0 3px 32px #4a9ed8, 0 0 0 8px #ece0fa;
+  box-shadow: 0 3px 32px color-mix(in srgb, var(--accent-color), transparent 45%),
+              0 0 0 8px color-mix(in srgb, var(--accent-color), transparent 88%);
   transition:
     box-shadow .22s cubic-bezier(.42,1.18,.88,1.1),
     transform .22s cubic-bezier(.42,1.18,.88,1.1),
@@ -1300,7 +1301,8 @@ section,
 .skill-icon-svg.skill-float:hover,
 .skill-icon-svg.skill-float:active {
   animation: skill-bounce 3.82s cubic-bezier(.34,1.56,.64,1);
-  box-shadow: 0 10px 30px var(--color-accent, #50a0d8), 0 0 0 12px #e6ddfc;
+  box-shadow: 0 10px 30px color-mix(in srgb, var(--accent-color), transparent 35%),
+              0 0 0 12px color-mix(in srgb, var(--accent-color), transparent 85%);
   filter: brightness(1.0) contrast(1.1) saturate(1.40);
   transform: scale(1.18) translateY(-10px) translateX(-8px) rotate(-7deg);
 }
@@ -1310,7 +1312,7 @@ section,
   display: block;
   margin-top: 0.35em;
   font-weight: 600;
-  color: var(--color-primary, #4a9ed8);
+  color: var(--accent-color);
   font-size: 1.17em;
   text-align: center;
   letter-spacing: .03em;
@@ -1399,4 +1401,360 @@ img, svg, iframe {
 --------------------------------------------------------------*/
 .starter-section {
   /* Add your styles here */
+}
+
+/*--------------------------------------------------------------
+# Stats
+--------------------------------------------------------------*/
+/* Stats y Skills comparten el fondo claro, asi que se leian como una
+   sola seccion. Los numeros van en tarjetas blancas para que Stats se
+   distinga solo, igual que las tarjetas de In Practice y Contact. */
+.stats .stats-item {
+  background: var(--surface-color);
+  border-radius: 14px;
+  padding: 26px 24px;
+  box-shadow: 0 2px 18px color-mix(in srgb, var(--default-color), transparent 92%);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.stats .stats-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 26px color-mix(in srgb, var(--accent-color), transparent 78%);
+}
+
+#stats.section {
+  padding-bottom: 45px;
+}
+
+#skills.section {
+  padding-top: 45px;
+}
+
+/*--------------------------------------------------------------
+# Ajustes de la cuadricula de Skills
+--------------------------------------------------------------*/
+/* aire entre el texto de la seccion y la primera fila de iconos */
+.skills-section {
+  padding: 55px 0 0 0;
+}
+
+/* flex en vez de grid: asi la ultima fila queda centrada aunque no
+   se llene completa */
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.skill {
+  width: 160px;
+}
+
+@media (max-width: 900px) {
+  .skill {
+    width: 110px;
+  }
+}
+
+@media (max-width: 768px) {
+  .skills-section {
+    padding-top: 35px;
+  }
+
+  .skill {
+    width: 105px;
+  }
+}
+
+@media (max-width: 650px) {
+  .skill {
+    width: 120px;
+  }
+}
+
+@media (max-width: 430px) {
+  .skill {
+    width: 105px;
+  }
+}
+
+/*--------------------------------------------------------------
+# Lo que hago con el stack (bloques de texto bajo los iconos)
+--------------------------------------------------------------*/
+.stack-wrap {
+  padding-top: 30px;
+}
+
+.stack-title {
+  color: var(--heading-color);
+  font-family: var(--heading-font);
+  font-size: 26px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 6px;
+}
+
+.stack-intro {
+  text-align: center;
+  color: color-mix(in srgb, var(--default-color), transparent 35%);
+  margin-bottom: 30px;
+}
+
+.stack-group {
+  background: var(--surface-color);
+  border-radius: 14px;
+  padding: 22px 24px;
+  height: 100%;
+  box-shadow: 0 2px 18px color-mix(in srgb, var(--default-color), transparent 92%);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.stack-group:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 26px color-mix(in srgb, var(--accent-color), transparent 70%);
+}
+
+.stack-group h4 {
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--heading-color);
+  margin-bottom: 14px;
+  letter-spacing: 0.02em;
+}
+
+.stack-group h4 i {
+  color: var(--accent-color);
+  margin-right: 8px;
+}
+
+.stack-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.stack-list li {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 1;
+  padding: 8px 12px;
+  border-radius: 999px;
+  color: var(--default-color);
+  background: color-mix(in srgb, var(--accent-color), transparent 90%);
+  border: 1px solid color-mix(in srgb, var(--accent-color), transparent 70%);
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+.stack-list li:hover {
+  background: var(--accent-color);
+  color: var(--contrast-color);
+}
+
+/*--------------------------------------------------------------
+# Portfolio: proyectos privados (sin link externo)
+--------------------------------------------------------------*/
+.portfolio .portfolio-content .portfolio-info .portfolio-badge {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  z-index: 4;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding: 5px 10px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.16);
+  border: 1px solid rgba(255, 255, 255, 0.45);
+}
+
+/* Cuando la tarjeta solo tiene el boton de vista previa, centrarlo */
+.portfolio .portfolio-content .portfolio-info.single-link .preview-link {
+  left: calc(50% - 13px);
+}
+
+/* Todas las capturas con la misma proporcion: asi las tarjetas miden igual
+   y al filtrar no quedan huecos en blanco entre columnas */
+.portfolio .portfolio-content img {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  object-position: top center;
+  display: block;
+}
+
+/*--------------------------------------------------------------
+# Contacto: tarjeta y boton de copiar correo
+--------------------------------------------------------------*/
+.copy-btn {
+  border: 0;
+  background: none;
+  padding: 0 0 0 8px;
+  color: color-mix(in srgb, var(--default-color), transparent 45%);
+  font-size: 15px;
+  cursor: pointer;
+  position: relative;
+  transition: color 0.3s;
+}
+
+.copy-btn:hover {
+  color: var(--accent-color);
+}
+
+.copy-btn .copy-msg {
+  position: absolute;
+  left: 50%;
+  bottom: 130%;
+  transform: translateX(-50%);
+  background: var(--accent-color);
+  color: var(--contrast-color);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  padding: 3px 8px;
+  border-radius: 4px;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.25s, visibility 0.25s;
+}
+
+.copy-btn.copied .copy-msg {
+  opacity: 1;
+  visibility: visible;
+}
+
+.copy-btn.copied {
+  color: var(--accent-color);
+}
+
+/* las dos columnas de Contact tienen que medir igual y verse igual */
+.contact .info-wrap,
+.work-card {
+  background: var(--surface-color);
+  border-radius: 16px;
+  padding: 35px;
+  height: 100%;
+  box-shadow: 0 3px 24px color-mix(in srgb, var(--default-color), transparent 88%);
+}
+
+.contact .info-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 38px;
+}
+
+.contact .info-item {
+  margin-bottom: 0;
+}
+
+@media (max-width: 575px) {
+  .contact .info-wrap {
+    padding: 25px;
+    gap: 28px;
+  }
+}
+
+.work-card h3 {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.work-card .work-card-intro {
+  color: color-mix(in srgb, var(--default-color), transparent 30%);
+  margin-bottom: 28px;
+}
+
+.work-card-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 32px 0;
+}
+
+.work-card-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 14px 0;
+  border-bottom: 1px solid color-mix(in srgb, var(--default-color), transparent 92%);
+}
+
+.work-card-list li:last-child {
+  border-bottom: 0;
+}
+
+.work-card-list li i {
+  font-size: 22px;
+  color: var(--accent-color);
+  line-height: 1.2;
+}
+
+.work-card-list li strong {
+  display: block;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: color-mix(in srgb, var(--default-color), transparent 45%);
+  font-weight: 600;
+  margin-bottom: 3px;
+}
+
+.work-card-list li span {
+  color: var(--heading-color);
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.work-card-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.work-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  padding: 13px 26px;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+.work-btn-solid {
+  background: var(--accent-color);
+  color: var(--contrast-color);
+}
+
+.work-btn-solid:hover {
+  background: color-mix(in srgb, var(--accent-color), #000 15%);
+  color: var(--contrast-color);
+}
+
+.work-btn-ghost {
+  color: var(--accent-color);
+  border: 2px solid var(--accent-color);
+}
+
+.work-btn-ghost:hover {
+  background: var(--accent-color);
+  color: var(--contrast-color);
+}
+
+@media (max-width: 575px) {
+  .work-card {
+    padding: 25px;
+  }
+
+  .work-btn {
+    width: 100%;
+    justify-content: center;
+  }
 }

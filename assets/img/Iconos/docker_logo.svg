@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-label="Docker">
+  <!-- TEMPORAL: reemplazar por el PNG oficial de Docker -->
+  <rect width="200" height="200" fill="#ffffff"/>
+  <g fill="#2496ED">
+    <rect x="48" y="86" width="22" height="22" rx="3"/>
+    <rect x="74" y="86" width="22" height="22" rx="3"/>
+    <rect x="100" y="86" width="22" height="22" rx="3"/>
+    <rect x="74" y="60" width="22" height="22" rx="3"/>
+    <rect x="100" y="60" width="22" height="22" rx="3"/>
+    <rect x="100" y="34" width="22" height="22" rx="3"/>
+  </g>
+  <path d="M34 116 h116 c0 26 -22 40 -52 40 c-34 0 -56 -14 -64 -40 z" fill="#2496ED"/>
+  <path d="M150 106 c10 -12 22 -10 28 -4 c-2 12 -12 18 -24 16" fill="#2496ED"/>
+  <text x="100" y="182" text-anchor="middle" font-family="Poppins, Raleway, Segoe UI, sans-serif" font-size="24"
+    font-weight="700" fill="#2496ED">docker</text>
+</svg>

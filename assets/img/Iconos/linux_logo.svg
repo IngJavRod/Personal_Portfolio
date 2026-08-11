@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-label="Linux">
+  <!-- TEMPORAL: reemplazar por el PNG oficial de Linux / Tux -->
+  <rect width="200" height="200" fill="#ffffff"/>
+  <!-- cuerpo -->
+  <path d="M100 30 c22 0 34 18 34 40 c0 14 -4 20 4 34 c10 16 18 30 18 42 c0 16 -24 26 -56 26 s-56 -10 -56 -26
+           c0 -12 8 -26 18 -42 c8 -14 4 -20 4 -34 c0 -22 12 -40 34 -40 z" fill="#1a1a1a"/>
+  <!-- panza -->
+  <ellipse cx="100" cy="132" rx="30" ry="34" fill="#ffffff"/>
+  <!-- ojos -->
+  <ellipse cx="88" cy="62" rx="8" ry="11" fill="#ffffff"/>
+  <ellipse cx="112" cy="62" rx="8" ry="11" fill="#ffffff"/>
+  <circle cx="89" cy="64" r="4" fill="#1a1a1a"/>
+  <circle cx="111" cy="64" r="4" fill="#1a1a1a"/>
+  <!-- pico -->
+  <path d="M100 72 c9 0 14 5 14 10 c0 5 -6 8 -14 8 s-14 -3 -14 -8 c0 -5 5 -10 14 -10 z" fill="#FCC624"/>
+  <!-- patas -->
+  <ellipse cx="82" cy="171" rx="16" ry="8" fill="#FCC624"/>
+  <ellipse cx="118" cy="171" rx="16" ry="8" fill="#FCC624"/>
+</svg>

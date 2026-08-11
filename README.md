@@ -12,6 +12,23 @@ Más que una simple página web, este portafolio es una forma de contar mi histo
 
 Tanto si eres reclutador, colega del mundo tech, o simplemente tienes curiosidad, ¡me alegra que estés explorando esto!
 
+## 🧭 Secciones
+
+Home · About · Stats · Skills · Resume · Portfolio · Contact
+
+## 🛠 Hecho con
+
+HTML, CSS, JavaScript y Bootstrap 5, con AOS, GLightbox, Isotope, Typed.js y PureCounter.
+La base es la plantilla [iPortfolio](https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/) de BootstrapMade.
+
+## 📌 Notas para mí
+
+- El CV que se descarga está en `assets/img/Doc/` (`CV_EN.pdf` y `CV_ES.pdf`). Para actualizarlo solo reemplazo esos archivos.
+- Los íconos de skills van en `assets/img/Iconos/`. Los de Odoo, PostgreSQL, AWS, Docker, Linux y Nginx están provisionales en SVG, pendiente cambiarlos por los oficiales.
+- Las imágenes de los proyectos de Kingstrong están en `assets/img/Projects/`.
+- Cada tarjeta del portafolio lleva su clase de filtro: `filter-erp`, `filter-web` o `filter-tools`.
+- Para verlo en local: `python -m http.server 8000`.
+
 ---
 
 🛠 Siéntete libre de revisar el código, explorar los proyectos y, por supuesto, compartir cualquier feedback.  

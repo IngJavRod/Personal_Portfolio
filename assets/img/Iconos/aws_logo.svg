@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-label="AWS">
+  <!-- TEMPORAL: reemplazar por el PNG oficial de Amazon Web Services -->
+  <rect width="200" height="200" fill="#ffffff"/>
+  <text x="100" y="105" text-anchor="middle" font-family="Poppins, Raleway, Segoe UI, sans-serif" font-size="62"
+    font-weight="700" fill="#232F3E">aws</text>
+  <path d="M40 135 C70 158 130 158 160 135" fill="none" stroke="#FF9900" stroke-width="12" stroke-linecap="round"/>
+  <path d="M152 128 L166 136 L150 145 Z" fill="#FF9900"/>
+</svg>

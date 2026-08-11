@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-label="PostgreSQL">
+  <!-- TEMPORAL: reemplazar por el PNG oficial de PostgreSQL -->
+  <rect width="200" height="200" fill="#ffffff"/>
+  <g fill="none" stroke="#336791" stroke-width="11" stroke-linecap="round">
+    <ellipse cx="100" cy="62" rx="44" ry="18"/>
+    <path d="M56 62 v52 c0 10 20 18 44 18 s44 -8 44 -18 V62"/>
+    <path d="M56 92 c0 10 20 18 44 18 s44 -8 44 -18"/>
+  </g>
+  <text x="100" y="172" text-anchor="middle" font-family="Poppins, Raleway, Segoe UI, sans-serif" font-size="27"
+    font-weight="700" fill="#336791">PostgreSQL</text>
+</svg>

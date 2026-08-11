@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-label="Odoo">
+  <!-- TEMPORAL: reemplazar por el PNG oficial de Odoo -->
+  <rect width="200" height="200" rx="0" fill="#ffffff"/>
+  <g transform="translate(100,92)">
+    <circle cx="-45" cy="0" r="26" fill="none" stroke="#714B67" stroke-width="13"/>
+    <circle cx="15" cy="0" r="26" fill="none" stroke="#8F7A87" stroke-width="13"/>
+  </g>
+  <text x="100" y="165" text-anchor="middle" font-family="Poppins, Raleway, Segoe UI, sans-serif" font-size="34"
+    font-weight="700" fill="#714B67">odoo</text>
+</svg>

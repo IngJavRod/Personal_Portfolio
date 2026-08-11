@@ -99,9 +99,9 @@
     new Typed('.typed', {
       strings: typed_strings,
       loop: true,
-      typeSpeed: 100,
-      backSpeed: 50,
-      backDelay: 2000
+      typeSpeed: 55,
+      backSpeed: 25,
+      backDelay: 1600
     });
   }
 
@@ -225,5 +225,36 @@
   }
   window.addEventListener('load', navmenuScrollspy);
   document.addEventListener('scroll', navmenuScrollspy);
+
+  /**
+   * Copiar mi correo al portapapeles
+   */
+  const copiarCorreo = document.querySelector('#copiar-correo');
+
+  if (copiarCorreo) {
+    copiarCorreo.addEventListener('click', function() {
+      const correo = 'inge.javirodriguez@gmail.com';
+
+      function avisarCopiado() {
+        copiarCorreo.classList.add('copied');
+        setTimeout(() => copiarCorreo.classList.remove('copied'), 1800);
+      }
+
+      // clipboard solo funciona en https/localhost, si no usamos el metodo viejo
+      if (navigator.clipboard && window.isSecureContext) {
+        navigator.clipboard.writeText(correo).then(avisarCopiado);
+      } else {
+        const temp = document.createElement('textarea');
+        temp.value = correo;
+        temp.style.position = 'fixed';
+        temp.style.opacity = '0';
+        document.body.appendChild(temp);
+        temp.select();
+        document.execCommand('copy');
+        document.body.removeChild(temp);
+        avisarCopiado();
+      }
+    });
+  }
 
 })();

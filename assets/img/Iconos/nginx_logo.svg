@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-label="Nginx">
+  <!-- TEMPORAL: reemplazar por el PNG oficial de NGINX -->
+  <rect width="200" height="200" fill="#ffffff"/>
+  <path d="M100 26 L166 62 v76 L100 174 L34 138 V62 Z" fill="none" stroke="#009639" stroke-width="12"
+    stroke-linejoin="round"/>
+  <text x="100" y="122" text-anchor="middle" font-family="Poppins, Raleway, Segoe UI, sans-serif" font-size="72"
+    font-weight="700" fill="#009639">N</text>
+</svg>
